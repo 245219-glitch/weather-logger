@@ -1,3 +1,11 @@
+def summarize(temps):
+    return {
+        "minimum": min(temps),
+        "maximum": max(temps),
+        "average": sum(temps) / len(temps),
+    }
+
+
 temps = []
 
 while True:
@@ -6,4 +14,4 @@ while True:
         break
     temps.append(int(value))
 
-print(temps)
+print(summarize(temps))
